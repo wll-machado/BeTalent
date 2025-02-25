@@ -213,11 +213,12 @@ justify-content: space-between;
 
 `
 export const CardInfos = styled.div`
-    display: none;
+     
+        display: none !important;
 
-    @media (min-width: 441px){
-        display: flex;
-                
+        @media (min-width: 441px){
+        display: flex !important;
+          
         span{
             margin-right: 155px;
         }
@@ -228,6 +229,7 @@ export const CardInfos = styled.div`
             margin-right: 0;
         }
     }
+   
 `
 export const Arrow = styled.span<{ rotated: boolean }>`
    width: 32px;
