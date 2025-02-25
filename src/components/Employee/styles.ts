@@ -26,7 +26,6 @@ color: ${({theme})=>theme.colors["black-neutral"]};
  div{
      position: relative;
      width: 100%;
-     min-width: 335px;
      height: 48px;
      margin-bottom: 24px;
     img{
@@ -74,11 +73,18 @@ li:last-child{
     justify-content: space-between;
     
 }
+
+@media (min-width: 441px) {
+    >div{
+        justify-content: flex-start;
+    }
+
+  }
 `
 export const Tags = styled.div`
 display: flex;
 gap: 24px;
-
+margin-right:182px ;
     span{
         font-family: Helvetica Neue;
 font-weight: 500;
@@ -87,6 +93,30 @@ line-height: 19.54px;
 letter-spacing: 0%;
 color: ${({theme})=>theme.colors["white"]};
     }
+
+    @media (min-width: 441px) {
+        gap:78px;
+    }
+`
+export const WebTags = styled.div`
+display: none;
+
+@media (min-width:441px){
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    gap: 24px;
+    
+
+    span{
+        font-family: Helvetica Neue;
+        font-weight: 500;
+        font-size: 16px;
+        line-height: 19.54px;
+        letter-spacing: 0%;
+        color: ${({theme})=>theme.colors["white"]};
+    }
+}
 `
 
 export const Dote = styled.div`
@@ -96,6 +126,9 @@ export const Dote = styled.div`
  background: ${({theme})=>theme.colors["white"]};
  margin-right: 12px;
 
+ @media (min-width: 441px) {
+    display: none; 
+  }
 `
 
 export const EmployeeCard = styled.li<{ expanded: boolean }>`
@@ -144,33 +177,58 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: space-between;
-    
-div{
-    display: flex;
-    justify-content: flex-start;
-    gap: 24px;
-    width: 100%;
-    img{
-        width: 34px;
-        height: 34px;
-        border-radius: 50%;
-        object-fit: cover;
+ 
+@media (min-width: 441px) {
+       div:nth-child(1) {
+        gap: 90px;
+        width: 45%;
+       }
     }
 
-    h3{
-        align-self: center;
-        font-family: Helvetica Neue;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 19.09px;
-        letter-spacing: 0%;
-        color: ${({theme})=>theme.colors["black-neutral"]};
-    }
-}
+    div{
+        display: flex;
+        justify-content: flex-start;
+        gap: 24px;
+        width: 100%;
+        
+        img{
+            width: 34px;
+            height: 34px;
+            border-radius: 50%;
+            object-fit: cover;
+        }
 
+        h3{
+            align-self: center;
+            font-family: Helvetica Neue;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19.09px;
+            letter-spacing: 0%;
+            color: ${({theme})=>theme.colors["black-neutral"]};
+        }    
+        }
+
+   
 
 `
+export const CardInfos = styled.div`
+    display: none;
 
+    @media (min-width: 441px){
+        display: flex;
+                
+        span{
+            margin-right: 155px;
+        }
+        span:nth-child(2){
+            margin-right: 235px;
+        }
+        span:nth-child(3){
+            margin-right: 0;
+        }
+    }
+`
 export const Arrow = styled.span<{ rotated: boolean }>`
    width: 32px;
     height: 32px;
@@ -180,4 +238,8 @@ export const Arrow = styled.span<{ rotated: boolean }>`
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   transform: rotate(${(props) => (props.rotated ? "180deg" : "0deg")});
+
+  @media (min-width: 441px) {
+    display: none; 
+  }
 `;
