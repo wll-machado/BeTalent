@@ -1,50 +1,24 @@
 # React + TypeScript + Vite
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Bem-vindo(a) ao Teste Prático Front-end BeTalent!
+Projeto criado com Vite utilizando react 18 e typescript
 
-Currently, two official plugins are available:
+📱 Sobre
+A aplicação consiste em uma unica tela, possui um input para filtrar a lista de funcionarios e a renderização da lista logo abaixo .
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Funcionalidades:
+- Input de pesquisa que filtra por cargo, nome e telefone
+   filtro feito em tempo real utilizando onChange podendo ser alterado se necessario.
+  
+- Formatação de datas e telefones no front-end
+  funções de formatação recebendo o valor direto da api por props, podem ser encontradas da pasta utils do projeto.
+  
+- Layout responsivo (desktop, tablet e mobile)
+  responsividade feita com media queries e com styled components e tipadas
 
-## Expanding the ESLint configuration
+📋 Como executar a aplicação
+Apos clonar o repositorio executar npm install para instalar as dependencias ,
+caso algum erro aconteça instalar manualmente : styled-components , type/styled-component e axios.
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
-```
-
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
-
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
-
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+executar o servidor com : json-server --watch db.json 
+executar o projeto com : npm run dev
