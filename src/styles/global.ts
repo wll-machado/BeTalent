@@ -8,6 +8,7 @@ export const GlobalStyle = createGlobalStyle`
         outline: none;
         text-decoration: none;
         font-family: 'Helvetica Neue', sans-serif;
+        list-style: none;
     }
 
     body{

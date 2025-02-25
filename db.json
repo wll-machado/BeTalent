@@ -2,75 +2,75 @@
   "employees": [
     {
       "id": 1,
-      "name": "João",
+      "name": "João Pedro Farias",
       "job": "Back-end",
       "admission_date": "2019-12-02T00:00:00.000Z",
       "phone": "5551234567890",
-      "image": "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg"
+      "image": "https://t4.ftcdn.net/jpg/03/64/21/11/360_F_364211147_1qgLVxv1Tcq0Ohz3FawUfrtONzz8nq3e.jpg"
     },
     {
       "id": 2,
-      "name": "Roberto",
+      "name": "Roberto de Carvalho",
       "job": "Front-end",
       "admission_date": "2020-03-12T00:00:00.000Z",
       "phone": "5550321654789",
-      "image": "https://e7.pngegg.com/pngimages/550/997/png-clipart-user-icon-foreigners-avatar-child-face.png"
+      "image": "https://t3.ftcdn.net/jpg/06/99/46/60/360_F_699466075_DaPTBNlNQTOwwjkOiFEoOvzDV0ByXR9E.jpg"
     },
     {
       "id": 3,
-      "name": "Maria",
+      "name": "Vanessa Machado",
       "job": "Front-end",
       "admission_date": "2020-03-15T00:00:00.000Z",
       "phone": "5557894561230",
-      "image": "https://www.clipartmax.com/png/middle/277-2772117_user-profile-avatar-woman-icon-avatar-png-profile-icon.png"
+      "image": "https://images.unsplash.com/photo-1494790108377-be9c29b29330?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8cHJvZmlsZXxlbnwwfHwwfHx8MA%3D%3D"
     },
     {
       "id": 4,
-      "name": "Cleber",
+      "name": "Cleber A. Amaral",
       "job": "Back-end",
       "admission_date": "2020-06-01T00:00:00.000Z",
       "phone": "5557410258963",
-      "image": "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg"
+      "image": "https://kellyweaverphotography.com/wp-content/uploads/2023/08/Denver-Dating-Profile-Photo-Men-5.jpg"
     },
     {
       "id": 5,
-      "name": "Giovana",
+      "name": "Giovana L. Arruda",
       "job": "Designer",
       "admission_date": "2020-06-20T00:00:00.000Z",
       "phone": "5553698520147",
-      "image": "https://www.clipartmax.com/png/middle/277-2772117_user-profile-avatar-woman-icon-avatar-png-profile-icon.png"
+      "image": "https://sb.kaleidousercontent.com/67418/1920x1282/7978bca0ba/christina-wocintechchat-com-50tkcap8m3a-unsplash.jpg"
     },
     {
       "id": 6,
-      "name": "Mario",
+      "name": "Mario Felipe",
       "job": "Front-end",
       "admission_date": "2020-10-01T00:00:00.000Z",
       "phone": "5551234567890",
-      "image": "https://e7.pngegg.com/pngimages/550/997/png-clipart-user-icon-foreigners-avatar-child-face.png"
+      "image": "https://images.ctfassets.net/h6goo9gw1hh6/2sNZtFAWOdP1lmQ33VwRN3/24e953b920a9cd0ff2e1d587742a2472/1-intro-photo-final.jpg?w=1200&h=992&fl=progressive&q=70&fm=jpg"
     },
     {
       "id": 7,
-      "name": "Gabriel",
+      "name": "Gabriel D.",
       "job": "Back-end",
       "admission_date": "2021-01-01T00:00:00.000Z",
       "phone": "5551234567890",
-      "image": "https://img.favpng.com/25/7/23/computer-icons-user-profile-avatar-image-png-favpng-LFqDyLRhe3PBXM0sx2LufsGFU.jpg"
+      "image": "https://media.istockphoto.com/id/1285124274/photo/middle-age-man-portrait.jpg?s=612x612&w=0&k=20&c=D14m64UChVZyRhAr6MJW3guo7MKQbKvgNVdKmsgQ_1g="
     },
     {
       "id": 8,
-      "name": "Carla",
+      "name": "Josiane Dias",
       "job": "Back-end",
       "admission_date": "2021-03-01T00:00:00.000Z",
       "phone": "5551234567890",
-      "image": "https://www.clipartmax.com/png/middle/277-2772117_user-profile-avatar-woman-icon-avatar-png-profile-icon.png"
+      "image": "https://marketplace.canva.com/EAFqNrAJpQs/2/0/1600w/canva-neutral-pink-modern-circle-shape-linkedin-profile-picture-nHZ1TkZ0aGk.jpg"
     },
     {
       "id": 10,
-      "name": "Fernanda",
+      "name": "Juliana Borba",
       "job": "Front-end",
       "admission_date": "2021-05-01T00:00:00.000Z",
       "phone": "5551234567890",
-      "image": "https://www.clipartmax.com/png/middle/277-2772117_user-profile-avatar-woman-icon-avatar-png-profile-icon.png"
+      "image": "https://www.befunky.com/images/wp/wp-2021-01-linkedin-profile-picture-after.jpg?auto=avif,webp&format=jpg&width=944"
     }
   ]
 }
