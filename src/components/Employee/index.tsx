@@ -79,10 +79,10 @@ function Employee() {
           </WebTags>
         </div>
 
-        {filteredEmployees.map((employee) => (
+         {filteredEmployees.map((employee) => (
           <EmployeeCard expanded={expandedId === employee.id} key={employee.id}>
             <CardHeader>
-              <div>
+              <div className="profile">
                 <img src={employee.image} alt="Foto de perfil do funcionário" />
                 <h3>{employee.name}</h3>
               </div>
@@ -115,7 +115,7 @@ function Employee() {
                 </span>
               </EmployeeInfo>
             )}
-          </EmployeeCard>
+          </EmployeeCard> 
         ))}
       </EmployeeTable>
     </MainContainer>

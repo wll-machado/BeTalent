@@ -6,13 +6,30 @@ padding:24px 20px ;
 display: flex;
 flex-direction: column;
 justify-content: center;
+
 `
 
 export const SearchContainer = styled.div`
 display: flex;
 flex-direction: column;
 gap: 24px;
+width: 100%;
+max-width: 1024px;
 
+@media (min-width: 767px){
+    flex-direction: row;
+    align-items: center;
+    margin: 0 auto;
+    h1{
+        margin-bottom: 24px;
+    }
+
+    input{
+        width: 335px !important;
+        position: absolute;
+        right: 0;
+    }
+}
 
 h1{
  font-family: Helvetica Neue;
@@ -74,17 +91,12 @@ li:last-child{
     
 }
 
-@media (min-width: 441px) {
-    >div{
-        justify-content: flex-start;
-    }
 
-  }
 `
 export const Tags = styled.div`
 display: flex;
 gap: 24px;
-margin-right:182px ;
+margin-right:12.5% ;
     span{
         font-family: Helvetica Neue;
 font-weight: 500;
@@ -94,29 +106,25 @@ letter-spacing: 0%;
 color: ${({theme})=>theme.colors["white"]};
     }
 
-    @media (min-width: 441px) {
-        gap:78px;
-    }
+   
 `
 export const WebTags = styled.div`
 display: none;
+font-family: Helvetica Neue;
+font-weight: 500;
+font-size: 16px;
+line-height: 19.54px;
+letter-spacing: 0%;
+color: ${({theme})=>theme.colors["white"]};
 
-@media (min-width:441px){
-    display: flex;
-    width: 60%;
-    justify-content: space-between;
-    gap: 24px;
-    
-
-    span{
-        font-family: Helvetica Neue;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 19.54px;
-        letter-spacing: 0%;
-        color: ${({theme})=>theme.colors["white"]};
-    }
+span:last-child{
+    padding-right: 60px;
 }
+@media (min-width: 767px){
+    display: flex;
+    justify-content: space-between;
+    width: 70%;
+ }
 `
 
 export const Dote = styled.div`
@@ -126,9 +134,9 @@ export const Dote = styled.div`
  background: ${({theme})=>theme.colors["white"]};
  margin-right: 12px;
 
- @media (min-width: 441px) {
-    display: none; 
-  }
+ @media (min-width: 767px){
+    display: none;
+ }
 `
 
 export const EmployeeCard = styled.li<{ expanded: boolean }>`
@@ -157,7 +165,7 @@ export const EmployeeInfo = styled.div`
     span{
         display: flex;
         justify-content: space-between;
-        width: 18.93rem;
+        width: 100%;
         font-family: Helvetica nue;
         font-weight: 500;
         font-size: 16px;
@@ -177,15 +185,9 @@ width: 100%;
 display: flex;
 align-items: center;
 justify-content: space-between;
- 
-@media (min-width: 441px) {
-       div:nth-child(1) {
-        gap: 90px;
-        width: 45%;
-       }
-    }
 
-    div{
+
+    .profile{
         display: flex;
         justify-content: flex-start;
         gap: 24px;
@@ -207,6 +209,10 @@ justify-content: space-between;
             letter-spacing: 0%;
             color: ${({theme})=>theme.colors["black-neutral"]};
         }    
+
+        @media (min-width: 767px){
+            width: 30%;
+        }
         }
 
    
@@ -216,20 +222,12 @@ export const CardInfos = styled.div`
      
         display: none !important;
 
-        @media (min-width: 441px){
-        display: flex !important;
-          
-        span{
-            margin-right: 155px;
-        }
-        span:nth-child(2){
-            margin-right: 235px;
-        }
-        span:nth-child(3){
-            margin-right: 0;
-        }
-    }
-   
+        @media (min-width: 767px){     
+            display: flex !important;
+            justify-content: space-between;
+            width: 70%;
+        }     
+           
 `
 export const Arrow = styled.span<{ rotated: boolean }>`
    width: 32px;
@@ -240,8 +238,8 @@ export const Arrow = styled.span<{ rotated: boolean }>`
   cursor: pointer;
   transition: transform 0.3s ease-in-out;
   transform: rotate(${(props) => (props.rotated ? "180deg" : "0deg")});
-
-  @media (min-width: 441px) {
-    display: none; 
-  }
+  
+  @media (min-width: 767px){
+    display: none;
+ }
 `;
