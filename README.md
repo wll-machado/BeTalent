@@ -15,7 +15,9 @@ Funcionalidades:
   
 - Layout responsivo (desktop, tablet e mobile)
   responsividade feita com media queries e com styled components e tipadas
-
+- API
+  Api consumida com axios e chamada feita atraves do useEffect.
+  
 📋 Como executar a aplicação
 Apos clonar o repositorio executar npm install para instalar as dependencias ,
 caso algum erro aconteça instalar manualmente : styled-components , type/styled-component e axios.
